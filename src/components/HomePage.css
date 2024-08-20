@@ -1,0 +1,131 @@
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    padding: 20px;
+    width: 900px;
+  }
+  
+  .hero-section {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .hero-section h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-section p {
+    color: #555;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .info-section {
+    text-align: center;
+  }
+  
+  .info-section h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .feature-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .feature-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+  
+  .feature-card h3 {
+    color: #007bff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .feature-card p {
+    color: #555;
+  }
+  
+  /* Responsive design adjustments */
+  @media (max-width: 768px) {
+    .hero-section h1 {
+      font-size: 2rem; /* Reduce font size on tablets and smaller screens */
+    }
+  
+    .hero-section p {
+      font-size: 1rem;
+    }
+  
+    .cta-button {
+      padding: 12px 24px;
+      font-size: 0.9rem;
+    }
+  
+    .info-section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .feature-card {
+      width: 100%; /* Full width on smaller screens */
+      max-width: 400px; /* Limit max width to maintain readability */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-section h1 {
+      font-size: 1.5rem; /* Further reduce font size on mobile devices */
+    }
+  
+    .hero-section p {
+      font-size: 0.9rem;
+    }
+  
+    .cta-button {
+      padding: 10px 20px;
+      font-size: 0.8rem;
+    }
+  
+    .info-section h2 {
+      font-size: 1.25rem;
+    }
+  }
+  
